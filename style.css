@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0.822), rgb(255, 0, 179));
+  color: white;
+}
+
+img {
+  height: 300px;
+  box-shadow: 0 8px 6px -8px white
+  
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+h1, h2, h3 {
+  margin-left: 5px;
+  box-shadow: 0 8px 6px -8px white
+}
