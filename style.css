@@ -1,20 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 body {
-  background: linear-gradient(90deg, rgba(255, 0, 0, 0.822), rgb(255, 0, 179));
-  color: white;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
-img {
-  height: 300px;
-  box-shadow: 0 8px 6px -8px white
-  
+header {
+  background-image: url("red-panda.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
 }
 
-ul li {
+nav {
+  background-color: rgba(250, 250, 250, 0.6);
+  padding: 0 10px 0 10px;
   display: flex;
+  justify-content: space-between;
+  height: 74px;
   align-items: center;
 }
 
-h1, h2, h3 {
-  margin-left: 5px;
-  box-shadow: 0 8px 6px -8px white
+.logo {
+  height: 55px;
+  width: 350px;
+  opacity: 0.7
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  opacity: 0.9;
+  width: 305px;
+  font-size: 900;
+  height: 100%;
+  margin: 0;
+}
+
+nav ul li {
+  background-color: rgba(250, 250, 250, 0.7);
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 17px
+}
+
+nav ul li:hover {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 85vh;
+}
+
+.description {
+  height: 640px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.description p {
+  padding: 20px;
+  opacity: 0.9;
+  width: 400px;
+  background-color: rgba(250, 250, 250, 0.9);
+  font-size: 18px;
+  align-self: flex-end;
+}
+
+.description span {
+  align-self: flex-end;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 25px;
+  border: 1px solid rgba(250, 250, 250, 0.9);
+  color: rgba(250, 250, 250, 0.9);
+  cursor: pointer;
+  transition: padding 300ms ease-in ;
+}
+
+.description span:hover {
+  padding: 15px
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  
+}
+
+.quote {
+  color: white;
+}
+
+.quote a {
+  text-decoration: none;
+  color: white;
+}
+
+.left-side .partners {
+  font-size: 22px;
+  font-weight: 900;
+  background-color: rgba(250, 250, 250, 0.5);
+  padding: 10px;
+  width: 300px;
+}
+
+.left-side .partners p{
+  opacity: 0.9;
+  margin-top: 0;
+}
+
+.left-side .partners ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  width: 300px;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.left-side .partners ul li img {
+  width: 80px;
+}
+
+.video {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.video span {
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid rgba(250, 250, 250, 0.7);
+  margin-left: 50px;
+}
+
+.video span:hover {
+  border-left: 150px solid rgba(250, 250, 250, 0.9);
+}
+
+.video span:hover + iframe {
+  opacity: 1;
+}
+
+iframe {
+  opacity: 0;
+  position: absolute;
+  transform: translate(70%);
+  transition: opacity 500ms ease-in;
 }
